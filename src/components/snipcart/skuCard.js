@@ -38,7 +38,7 @@ const SkuCard = class extends React.Component {
                                 data-item-image={sku.image}
                                 data-item-name={sku.title}
                                 data-item-description={sku.description}
-                                data-item-url={window.location.origin}>
+                                data-item-url='/snipcart'>
                                 Buy
 </button>
                         </div>
