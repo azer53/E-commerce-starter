@@ -29,12 +29,6 @@ module.exports = {
     `gatsby-plugin-stripe`,
     `gatsby-transformer-remark`,
     {
-      resolve: 'gatsby-plugin-snipcart',
-      options: {
-        apiKey: 'YOUR_SNIPCART_KEY'
-      }
-    },
-    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Commerce 2020`,
@@ -54,12 +48,13 @@ module.exports = {
         downloadFiles: true,
       }
     },
-    {
+/*     {
       resolve: 'gatsby-plugin-snipcart',
       options: {
-        apiKey: 'process.env.SNIPCART_KEY'
+        apiKey: 'process.env.SNIPCART_KEY',
+        autopop: true,
       }
-    },
+    }, */
     `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-plugin-purgecss`,

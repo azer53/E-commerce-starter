@@ -19,6 +19,7 @@ class Skus extends Component {
                             image
                             price
                             title
+                            path
                             description
                           }
                         }
