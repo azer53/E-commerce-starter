@@ -21,6 +21,12 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-stripe`,
     {
+      resolve: 'gatsby-plugin-snipcart',
+      options: {
+        apiKey: 'YOUR_SNIPCART_KEY'
+      }
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Commerce 2020`,
@@ -38,6 +44,12 @@ module.exports = {
         objects: ['Product', 'Sku', 'Subscription'],
         secretKey: process.env.STRIPE_SECRET_KEY,
         downloadFiles: true,
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-snipcart',
+      options: {
+        apiKey: 'process.env.SNIPCART_KEY'
       }
     },
     `gatsby-plugin-postcss`,
