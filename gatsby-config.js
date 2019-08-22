@@ -20,6 +20,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-stripe`,
+    `gatsby-plugin-commercelayer`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
