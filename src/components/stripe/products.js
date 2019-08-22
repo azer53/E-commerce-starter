@@ -38,7 +38,6 @@ class Skus extends Component {
                 render={
                     ({ allStripeSku }) => (
                     <>
-                        {console.log(allStripeSku)}
                         {allStripeSku.edges.map(({ node: sku }) => (
                             <SkuCard key={sku.id} sku={sku} stripe={this.state.stripe} />
                         ))}

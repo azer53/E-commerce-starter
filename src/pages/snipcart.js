@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import Hero from "../components/smallHero"
 import CallToAction from "../components/callToAction"
 import SEO from "../components/seo"
-import Products from "../components/stripe/products"
+import Products from "../components/snipcart/products"
 
 
 
