@@ -48,13 +48,13 @@ module.exports = {
         downloadFiles: true,
       }
     },
-/*     {
+     {
       resolve: 'gatsby-plugin-snipcart',
       options: {
-        apiKey: 'process.env.SNIPCART_KEY',
+        apiKey: 'ODg0NTFhZTEtZThkMy00OWJlLWIwZmEtOTVhZDk0MjYzMjljNjM3MDIwNTgxMjc3Njg5NjA0',
         autopop: true,
       }
-    }, */
+    }, 
     `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-plugin-purgecss`,
