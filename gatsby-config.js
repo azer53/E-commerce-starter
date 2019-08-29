@@ -48,13 +48,20 @@ module.exports = {
         downloadFiles: true,
       }
     },
-     {
+    {
       resolve: 'gatsby-plugin-snipcart',
       options: {
         apiKey: 'ODg0NTFhZTEtZThkMy00OWJlLWIwZmEtOTVhZDk0MjYzMjljNjM3MDIwNTgxMjc3Njg5NjA0',
         autopop: true,
       }
-    }, 
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `e37ybt6spd36`,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
     `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-plugin-purgecss`,

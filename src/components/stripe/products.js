@@ -30,6 +30,7 @@ class Skus extends Component {
                           product {
                             name
                           }
+                          image
                         }
                       }
                     }
