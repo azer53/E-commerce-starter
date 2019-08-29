@@ -13,8 +13,7 @@ const SkuCard = class extends React.Component {
                         <div className="flex flex-wrap no-underline hover:no-underline">
                             <p className="w-full text-gray-600 text-xs md:text-sm px-6">{sku.skillLevel}</p>
                             <div className="w-full font-bold text-xl text-gray-800 px-6">{sku.title}</div>
-                            <p className="text-gray-800 text-base px-6 mb-5">
-                                {sku.description.description}
+                            <p className="text-gray-800 text-base px-6 mb-5" dangerouslySetInnerHTML={{ __html: sku.description.description }}>
                             </p>
                         </div>
                     </div>
