@@ -9,9 +9,9 @@ class Skus extends Component {
         return (
             <StaticQuery
                 query={graphql`
-                query MyQuery {
-                    allMarkdownRemark {
-                      edges {
+                query snipQuery {
+                  allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/products/"}}) {
+                    edges {
                         node {
                           id
                           frontmatter {
