@@ -43,6 +43,14 @@ class Navigation extends React.Component {
                                         Stripe
                                     </Link>
                                 </li>
+                                <li className="mr-3">
+                                    <Link
+                                        className="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+                                        to="/contentful"
+                                        activeClassName="inline-block py-2 px-4 text-black font-bold no-underline">
+                                        Contentful
+                                    </Link>
+                                </li>
                             </ul>
                         </div>
                     </div>
