@@ -17,9 +17,17 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `products`,
+        path: `${__dirname}/content/products`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-stripe`,
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -38,6 +46,13 @@ module.exports = {
         objects: ['Product', 'Sku', 'Subscription'],
         secretKey: process.env.STRIPE_SECRET_KEY,
         downloadFiles: true,
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-snipcart',
+      options: {
+        apiKey: 'ODg0NTFhZTEtZThkMy00OWJlLWIwZmEtOTVhZDk0MjYzMjljNjM3MDIwNTgxMjc3Njg5NjA0',
+        autopop: true,
       }
     },
     {
