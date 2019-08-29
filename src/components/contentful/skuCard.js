@@ -1,16 +1,6 @@
 
 import React from "react"
 
-const formatPrice = (amount, currency) => {
-    let price = (amount / 100).toFixed(2)
-    let numberFormat = new Intl.NumberFormat(["en-US"], {
-        style: "currency",
-        currency: currency,
-        currencyDisplay: "symbol",
-    })
-    return numberFormat.format(price)
-}
-
 const SkuCard = class extends React.Component {
 
     render() {
@@ -21,9 +11,11 @@ const SkuCard = class extends React.Component {
                 <div className="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
                     <div className="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
                         <div className="flex flex-wrap no-underline hover:no-underline">
-                            <p className="w-full text-gray-600 text-xs md:text-sm px-6">{sku.title}</p>
+                            <p className="w-full text-gray-600 text-xs md:text-sm px-6">{sku.skillLevel}</p>
                             <div className="w-full font-bold text-xl text-gray-800 px-6">{sku.title}</div>
-
+                            <p className="text-gray-800 text-base px-6 mb-5">
+                                {sku.description.description}
+                            </p>
                         </div>
                     </div>
                     <div className="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
