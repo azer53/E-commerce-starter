@@ -22,6 +22,12 @@ class Skus extends Component {
                             description
                           }
                           skillLevel
+                          image
+                          {
+                            fluid(maxWidth: 700) {
+                                ...GatsbyContentfulFluid
+                              }
+                          }
                         }
                       }
                     }

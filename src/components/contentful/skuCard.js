@@ -1,5 +1,7 @@
 
 import React from "react"
+import Img from "gatsby-image"
+
 
 const SkuCard = class extends React.Component {
 
@@ -13,6 +15,7 @@ const SkuCard = class extends React.Component {
                         <div className="flex flex-wrap no-underline hover:no-underline">
                             <p className="w-full text-gray-600 text-xs md:text-sm px-6">{sku.skillLevel}</p>
                             <div className="w-full font-bold text-xl text-gray-800 px-6">{sku.title}</div>
+                            <Img fluid={sku.image.fluid} className="w-full my-2 rounded-sm mx-1"/>
                             <p className="text-gray-800 text-base px-6 mb-5" dangerouslySetInnerHTML={{ __html: sku.description.description }}>
                             </p>
                         </div>
